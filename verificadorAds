@@ -103,7 +103,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             body=$(echo $response | jq -r '.packprovision')
 
                                 case $body in
-                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
+                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
                       packprovisionOK) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18
                                 esac
                                 done
@@ -127,18 +127,18 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                           pack=$'"packprovisionOK"'
                               case $o in
                               $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                       *) mssg=$(echo "INICIANDO O PRÓXIMO")
+                                       *) mssg=$(echo "tem mais")
                               esac
                               case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
                                   $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "AFF"; echo $response; break
+                                      *) echo "ping +999"; echo $response; break
                               esac
                              done
                             done
                           echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
                           echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                          echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mINICIAR SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Cole o número manualmente\e[0m"
+                          echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mINICIAR SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m cole o número\e[0m"
                           echo -e "  \e[01;37m〘*2*〙\e[0m\e[01;04;33mDE NOVO COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Tudo automático\e[0m"
                           echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00 ;31m═══════════════\e[0m"
                           echo -e "  \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
@@ -172,12 +172,12 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                                 pack=$'"packprovisionOK"'
                                 case $o in
                                   $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                           *) mssg=$(echo "INICIANDO O PRÓXIMO")
+                                           *) mssg=$(echo "tem mais")
                                 esac 
                                 case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
                                   $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "AFF"; echo $response; break
+                                      *) echo "ping +999"; echo $response; break
                                esac
                               done
                              done
@@ -203,7 +203,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
     2) 
      while :; do
              echo -e "\e[01;02;37m # Dica: Você pode pegar o pass no site da vivo:\n \e[01;02;04;37mi.vivo.ddivulga.com/i/gp\e[0m\e[01;02;37m #\e[0m"|pv -qL 18; sleep 3
-             clear; echo -e $tit; echo; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONIVEL   \e[0m"; sleep .5; echo
+             clear; echo -e $tit; echo; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONÍVEL   \e[0m"; sleep .5; echo
               
              echo -e "\e[01;37;41m Cole o PASS \e[0m"
                     read -n86 -p "Pass: " passs; sleep 1.5
@@ -248,7 +248,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             #echo $response
 
                             case $body in
-                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
+                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
                       packprovisionOK) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18
                             esac
                            done
@@ -272,18 +272,18 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                     pack=$'"packprovisionOK"'
                         case $o in
                         $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                 *) mssg=$(echo "INICIANDO O PRÓXIMO")
+                                 *) mssg=$(echo "tem mais")
                         esac
                      case $body in
-                          null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                          null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
                          $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                             *) echo "AFF"; echo $response; break
+                             *) echo "ping +999"; echo $response; break
                      esac
                      done
                      done
                        echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
                        echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mINICIAR SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Cole o número manualmente\e[0m"
+                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mINICIAR SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m cole o número\e[0m"
                        echo -e "  \e[01;37m〘*2*〙\e[0m\e[01;04;33mDE NOVO COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Tudo automático\e[0m"
                        echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
                        echo -e "  \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
@@ -318,18 +318,18 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             pack=$'"packprovisionOK"'
                               case $o in
                              $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                      *) mssg=$(echo "INICIANDO O PRÓXIMO")
+                                      *) mssg=$(echo "tem mais")
                               esac 
                               case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
                                   $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "AFF"; echo $response; break
+                                      *) echo "ping +999"; echo $response; break
                               esac
                             done
                             done
                             echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
                        echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mDE NOVO SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Cole o número manualmente\e[0m"
+                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mDE NOVO SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m cole o número\e[0m"
                        echo -e "  \e[01;37m〘*2*〙\e[0m\e[01;04;33mINICIAR COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Tudo automático\e[0m"
                        echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
                        echo -e "  \e[01;37m『*3*』\e[0m\e[01;04;33m VOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
@@ -371,18 +371,18 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
          pack=$'"packprovisionOK"'
              case $o in
              $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                      *) mssg=$(echo "INICIANDO O PRÓXIMO")
+                      *) mssg=$(echo "tem mais")
              esac 
              case $body in
-                  null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                  null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
                  $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                     *) echo "AFF"; echo $response; break
+                     *) echo "ping +999"; echo $response; break
              esac
             done
            done
                             echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
                        echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mREPETIR TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m Cole o número manualmente\e[0m"
+                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mREPETIR TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m cole o número\e[0m"
                        echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
                        echo -e "  \e[01;37m『*2*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
                        echo -e "  \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
