@@ -38,10 +38,10 @@ clear; echo -e $tit; echo
   echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
   echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
   echo -e "   \e[01;37m〘*1*〙\e[0m\e[01;04;33mVERIFICADOR AUTOMÁTICO\e[0m\c"; echo -e "\e[02;03;37m Use dados móveis nessa opção\e[0m"
-  echo -e "   \e[01;37m〘*2*〙\e[0m\e[01;04;33mVERIFICADOR MANUAL\e[0m\c"; echo -e "\e[02;03;37m     Cole o Pass manualmente\e[0m"
+  echo -e "   \e[01;37m〘*2*〙\e[0m\e[01;04;33mVERIFICADOR MANUAL\e[0m\c"; echo -e "\e[02;03;37m     cole o PASS aqui\e[0m"
   echo -e "   \e[01;37m〘*3*〙\e[0m\e[01;04;33mPULAR VERIFICADOR\e[0m\c"; echo -e "\e[02;03;37m      Ir direto ao padrão\e[0m"
   echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-  echo -e "   \e[01;37m『*4*』\e[0m\e[01;04;33mSOLICITAR PASS\e[0m\c"; echo -e "\e[02;03;37m          Use dados móveis nessa opção\e[0m"
+  echo -e "   \e[01;37m『*4*』\e[0m\e[01;04;33mOBTER PASS pra usar na 2 \e[0m\c"; echo -e "\e[02;03;37m          Use dados móveis nessa opção\e[0m"
   echo -e "   \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m    Noob sofre\e[0m"
   echo -e "  \e[00;31m═══════════════════════════════\e[0m"
   
@@ -402,7 +402,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                 
     4) 
       clear; echo -e $tit; echo
-             echo -e "\e[01;37;41m            SOLICITAR PASS             \e[0m"; echo
+             echo -e "\e[01;37;41m            OBTER PASS pra usar na 2              \e[0m"; echo
              echo -e "\e[01;02;37m # UTILIZE A REDE DO CHIP NESSA OPÇÃO! #\e[0m"|pv -qL 20; echo
              echo -e "      \e[01;37m 𝚁𝙴𝚀𝚄𝙸𝚂𝙸𝚃𝙰𝙽𝙳𝙾 𝙾 𝙿𝙰𝚂𝚂\e[0m"
              echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m";sleep .5
