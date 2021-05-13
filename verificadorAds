@@ -32,58 +32,70 @@ eeeee367-b3a7-4293-9dce-116de3b7157d
 9cc0b507-59d5-4773-a9a0-9c3efbf6df2f
 f1a6c737-5859-405f-8bb9-7805528bbdf8")
 while :; do
-clear; echo -e $tit; echo
+clear; echo -e $tit
 
-  echo -e "\e[01;37;41m    VERIFICAR SE HÁ ADS DISPONIVEL    \e[0m"; sleep .4; echo
-  echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
-  echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-  echo -e "   \e[01;37m〘*1*〙\e[0m\e[01;04;33mVERIFICADOR AUTOMÁTICO\e[0m\c"; echo -e "\e[02;03;37m Use dados móveis nessa opção\e[0m"
-  echo -e "   \e[01;37m〘*2*〙\e[0m\e[01;04;33mVERIFICADOR MANUAL\e[0m\c"; echo -e "\e[02;03;37m     cole o PASS aqui\e[0m"
-  echo -e "   \e[01;37m〘*3*〙\e[0m\e[01;04;33mPULAR VERIFICADOR\e[0m\c"; echo -e "\e[02;03;37m      Ir direto ao padrão\e[0m"
-  echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-  echo -e "   \e[01;37m『*4*』\e[0m\e[01;04;33mOBTER PASS pra usar na 2 \e[0m\c"; echo -e "\e[02;03;37m          Use dados móveis nessa opção\e[0m"
-  echo -e "   \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m    Noob sofre\e[0m"
-  echo -e "  \e[00;31m═══════════════════════════════\e[0m"
+  echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
+  echo -e "         \e[01;37m𝙼𝙴𝙽𝚄 𝙳𝙴 𝙾𝙿𝙲𝙾𝙴𝚂\e[0m"
+  echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+  echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mVERIFICAR SE HÁ ADS\e[0m\c"; echo -e "\e[02;03;37m   Ver se posso ganhar MB\e[0m"
+  echo -e " \e[01;37m〘*2*〙\e[0m\e[01;04;33mVERIFICAR ADS NA MÃO\e[0m\c"; echo -e "\e[02;03;37m  cole o PASS aqui\e[0m"
+  echo -e " \e[01;37m〘*3*〙\e[0m\e[01;04;33mIR AO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m Ir direto ao padrão\e[0m"
+  echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+  echo -e " \e[01;37m『*4*』\e[0m\e[01;04;33mSOLICITAR PASS\e[0m\c"; echo -e "\e[02;03;37m         use dados móveis nessa opção\e[0m"
+  echo -e " \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m   Noob sofre\e[0m"
+  echo -e " \e[00;31m═══════════════════════════════\e[0m"
   
 veri=$(echo -e "\e[01;37m Opção: \e[0m")
   read -n1 -p "$veri" verifica; echo
     case $verifica in # case MENU
         1)
          while :; do
-             echo -e "\e[01;02;37m # UTILIZE A REDE DO CHIP NESSA OPÇÃO! #\e[0m"|pv -qL 18; sleep 2.5
-             clear; echo -e $tit; echo; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONÍVEL   \e[0m"; sleep .5; echo
-                echo -e "      \e[01;37m 𝚁𝙴𝚀𝚄𝙸𝚂𝙸𝚃𝙰𝙽𝙳𝙾 𝙿𝙰𝚂𝚂\e[0m"
+             echo -e "\e[01;37;41m # USE DADOS MÓVEIS # \e[0m"|pv -qL 18
+             echo -e "\e[01;37;41m #   OU IP DA VIVO NESSA OPÇÃO!    # \e[0m"|pv -qL 18; sleep 2.5
+             clear; echo -e $tit; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONÍVEL   \e[0m"; sleep .5; echo
+                echo -e "      \e[01;37m 𝚁𝙴𝚀𝚄𝙸𝚂𝙸𝚃𝙰𝙽𝙳𝙾 𝙾 𝙿𝙰𝚂𝚂\e[0m"
                 echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m";sleep .5
                 
                 pass=$(curl -s -d "version=2" i.vivo.ddivulga.com/i/gp)
                 pass2=$(echo $pass| jq -r .sctoken)
                 pass3=$(echo $pass| grep -c sctoken)
                     case $pass3 in
-                         0) echo -e "\e[00;33m POH \n dica: NÃO UTILIZE WI-FI OU VPN DURANTE A VERIFICAÇÃO\e[0m"; sleep 4; break;;
+                         0) echo -e "\e[00;33m brasileiro é foda \n dica: NÃO UTILIZE WI-FI OU VPN DURANTE A VERIFICAÇÃO\e[0m"; sleep 4; break;;
                          1) echo -e "\e[01;37m CERTO PASS\e[0m\e[01;32m OK!\e[0m"|pv -qL 20; sleep .5
                                echo -e "\e[01;37m PASS >\e[0m\e[00;32m $pass2\e[0m"; sleep 1
                     esac
                     
                     tx="NÃO HÁ ADS DISPONÍVEL PRA ESSE CHIP FULEIRO..."
-                    tx2="CONTINUANDO PARA OS TOKENS PADRÃO\n CASO NADA IR BEM, CHAME A CRUSH"
-                echo; echo -e "     \e[01;37m 𝚅𝙴𝚁𝙸𝙵𝙸𝙲𝙰𝙽𝙳𝙾 𝚂𝙴 𝙷Á 𝙰𝙳𝚂 \e[0m"
+                    tx2="CONTINUANDO PARA OS TOKENS PADRÃO\n VEREMOS SE HOJE É SEU DIA DE SORTE!"
+                echo; echo -e "     \e[01;37m 𝚅𝙴𝚁𝙸𝙵𝙸𝙲𝙰𝙽𝙳𝙾 𝚂𝙴 𝙷𝙰 𝙰𝙳𝚂 \e[0m"
                 echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m";sleep .5
                 
                 pass=$(curl -s -d "version=2" i.vivo.ddivulga.com/i/gp)
                 pass2=$(echo $pass| jq -r .sctoken)
                 url=$(curl -s -d "slotId=%5B%7B%22slotId%22%3A110%2C%22target%22%3A%22%22%7D%5D&pageId=693930&insertionId=&insertionUUID=&insertionType=&referer=http%3A%2F%2Fportalrecarga.vivo.com.br%2F&accessPass=$pass2" http://e.vivo.ddivulga.com/api/v2.1/fetch -H "Origin: http://a.vivo.ddivulga.com")
-                    
+                     
+                     pass3=$(curl -s -d "slotId=%5B%7B%22slotId%22%3A110%2C%22target%22%3A%22%22%7D%5D&pageId=693930&insertionId=&insertionUUID=&insertionType=&referer=http%3A%2F%2Fportalrecarga.vivo.com.br%2F&accessPass=$pass2" http://e.vivo.ddivulga.com/api/v2.1/fetch -H "Origin: http://a.vivo.ddivulga.com" -w '%{response_code}' | grep -c 401)
+                          case $pass3 in
+                               1) echo -e "\e[01;33m queda na rede!\n VERIFIQUE SE ESTÁ TUDO CERTO\e[0m"; sleep 3; break;;
+                               *)
+                          esac
+        
                     while :; do # verificar ads on / token
-                       token2=$(echo $url | jq -r '.["110"].appInstallRewardAdvUuid')
-                         case $token2 in
-                              null) echo -e "\e[01;37m OK ADS ON / AGORA VEREMOS SE HÁ TOKEN ONLINE\e[0m";;
-                                 *) ttt=1; toki=$(echo $url | jq -r '.["110"].appInstallRewardAdvUuid'); break
-                         esac
+                       token2=$(echo $url | grep -c appInstallRewardAdvUuid)
+                             case $token2 in
+                                  0) ttt=0; break;;
+                                  *) echo -e "\e[01;37m OK ADS ON / AGORA VEREMOS SE HÁ TOKEN ONLINE\e[0m"
+                             esac
+                       toki=$(echo $url | jq -r '.["110"].appInstallRewardAdvUuid')
+                           case $toki in
+                              null);;
+                                 *) ttt=1; break
+                           esac
                        token=$(echo $url | grep -c "campid:")
-                         case $token in
-                                 1) ttt=1; toki=$(echo $url | grep -o "campid:......................................." | cut -d":" -f2 | cut -d'"' -f2); break;;
-                                 0) echo -e "\e[01;37m NÃO ENCONTRAMOS TOKEN, PORÉM VOCÊ TERÁ SUCESSO NO PADRÃO\e[0m"; sleep .5; tx="CONTINUANDO PARA OS TOKENS PADRÃO"; tx2=; ttt=0; break
-                         esac
+                           case $token in
+                                1) ttt=1; toki=$(echo $url | grep -o "campid:......................................." | cut -d":" -f2 | cut -d'"' -f2); break;;
+                                0) echo -e "\e[01;37m NÃO ENCONTRAMOS TOKEN, PORÉM VOCÊ TERA SUCESSO NO PADRÃO\e[0m"; sleep .5; tx="CONTINUANDO PARA OS TOKENS PADRÃO"; tx2=; ttt=0; break
+                           esac
                     done
                     numero=$(echo $url | jq -r '.msisdn')
                     case $ttt in
@@ -103,14 +115,14 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             body=$(echo $response | jq -r '.packprovision')
 
                                 case $body in
-                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
-                      packprovisionOK) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18
+                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
+                      packprovisionOK) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18
                                 esac
                                 done
                                 esac
                                 
-                           clear; echo -e $tit; echo
-                                  echo -e "\e[01;37;41m           TESTADOR PADRÃO           \e[0m"; echo
+                           clear; echo -e $tit
+                                  echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
                                   echo -e "\e[07;01;37;40m NUMERO \e[01;31;47m $numero \e[0m"; sleep .5; echo
                            qtdtokens=$(echo "$tokens"| wc -l)
                            for o in $(seq $qtdtokens);
@@ -127,35 +139,35 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                           pack=$'"packprovisionOK"'
                               case $o in
                               $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                       *) mssg=$(echo "tem mais")
+                                       *) mssg=$(echo "TEM MAIS")
                               esac
                               case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "ping +999"; echo $response; break
+                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                                      *) echo "queda na rede"; echo $response; break
                               esac
                              done
                             done
-                          echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
-                          echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                          echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mINICIAR SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m cole o número\e[0m"
-                          echo -e "  \e[01;37m〘*2*〙\e[0m\e[01;04;33mDE NOVO COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Tudo automático\e[0m"
-                          echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00 ;31m═══════════════\e[0m"
-                          echo -e "  \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
-                          echo -e "  \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
-                          echo -e "  \e[00;31m═══════════════════════════════\e[0m"
+                          echo -e "         \e[01;37m ＯＰＣＯＥＳ \e[0m"
+                          echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+                          echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mIR AO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m   cole só o número\e[0m"
+                          echo -e " \e[01;37m〘*2*〙\e[0m\e[01;04;33mREPETIR COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m tudo automático\e[0m"
+                          echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+                          echo -e " \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
+                          echo -e " \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
+                          echo -e " \e[00;31m═══════════════════════════════\e[0m"
                
                           while :; do
                             veri=$(echo -e "\e[01;37m Opção: \e[0m")
                           read -n1 -p "$veri" opc2; echo
                           case $opc2 in
                               1)
-                                clear; echo -e $tit; echo
-                                       echo -e "\e[01;37;41m           TESTADOR PADRÃO           \e[0m"; sleep .5; echo
+                                clear; echo -e $tit
+                                       echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
                                        echo -e "\e[01;37;41m Coloque 55+DDD+NÚMERO \e[0m"
                                 read -p "$veri" NUMERO; sleep 1
-                                clear; echo -e $tit; echo
-                                       echo -e "\e[01;37;41m           TESTADOR PADRÃO           \e[0m"; echo
+                                clear; echo -e $tit
+                                       echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
                                        echo -e "\e[07;01;37;40m NUMERO \e[01;31;47m $NUMERO \e[0m"; sleep .5; echo
                                 veri=$(echo -e "\e[01;37m Numero: \e[0m")
                                 for o in $(seq $qtdtokens);
@@ -172,23 +184,23 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                                 pack=$'"packprovisionOK"'
                                 case $o in
                                   $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                           *) mssg=$(echo "tem mais")
+                                           *) mssg=$(echo "TEM MAIS")
                                 esac 
                                 case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "ping +999"; echo $response; break
+                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                                      *) echo "queda na rede"; echo $response; break
                                esac
                               done
                              done
                            echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
-                           echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                           echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mDE NOVO SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Só colocar o numero\e[0m"
-                           echo -e "  \e[01;37m〘*2*〙\e[0m\e[01;04;33mINICIAR COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Tudo automatico\e[0m"
-                           echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                           echo -e "  \e[01;37m『*3*』\e[0m\e[01;04;33m VOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
-                           echo -e "  \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
-                           echo -e "  \e[00;31m═══════════════════════════════\e[0m";;
+                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+                           echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mREPETIR TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m cole só o número\e[0m"
+                           echo -e " \e[01;37m〘*2*〙\e[0m\e[01;04;33mINICIAR COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m tudo automático\e[0m"
+                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+                           echo -e " \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
+                           echo -e " \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
+                           echo -e " \e[00;31m═══════════════════════════════\e[0m";;
                           2) break;;
                           3) break;;
                           0) exit;;
@@ -202,32 +214,44 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                  
     2) 
      while :; do
-             echo -e "\e[01;02;37m # Dica: Você pode pegar o pass no site da vivo:\n \e[01;02;04;37mi.vivo.ddivulga.com/i/gp\e[0m\e[01;02;37m #\e[0m"|pv -qL 18; sleep 3
-             clear; echo -e $tit; echo; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONÍVEL   \e[0m"; sleep .5; echo
+             echo -e "\e[01;02;37m # Dica: Você pode pegar o pass no site da vivo:\n        \e[01;02;04;37mi.vivo.ddivulga.com/i/gp\e[0m\n \e[01;02;37m# use opção 4 se você é noob ;)\e[0m"; sleep 3
+             clear; echo -e $tit; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONÍVEL   \e[0m"; sleep .5; echo
               
-             echo -e "\e[01;37;41m Cole o PASS \e[0m"
+             echo -e "\e[01;37;41m cole o PASS \e[0m"
                     read -n86 -p "Pass: " passs; sleep 1.5
-             clear; echo -e $tit; echo; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONÍVEL   \e[0m"; sleep .5; echo
+             clear; echo -e $tit; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONÍVEL   \e[0m"; sleep .5; echo
           
              tx="NÃO HÁ ADS DISPONÍVEL PRA ESSE CHIP FULEIRO..."
-             tx2="CONTINUANDO PARA OS TOKENS PADRÃO\n CASO NADA IR BEM, CHAME A CRUSH"
+             tx2="CONTINUANDO PARA OS TOKENS PADRÃO\n VEREMOS SE HOJE É SEU DIA DE SORTE!"
                 echo -e "     \e[01;37m 𝚅𝙴𝚁𝙸𝙵𝙸𝙲𝙰𝙽𝙳𝙾 𝚂𝙴 𝙷𝙰 𝙰𝙳𝚂 \e[0m"
                 echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m";sleep .5
                 
              pass2=$"$passs"
              url=$(curl -s -d "slotId=%5B%7B%22slotId%22%3A110%2C%22target%22%3A%22%22%7D%5D&pageId=693930&insertionId=&insertionUUID=&insertionType=&referer=http%3A%2F%2Fportalrecarga.vivo.com.br%2F&accessPass=$pass2" http://e.vivo.ddivulga.com/api/v2.1/fetch -H "Origin: http://a.vivo.ddivulga.com")
                     
+                    pass3=$(curl -s -d "slotId=%5B%7B%22slotId%22%3A110%2C%22target%22%3A%22%22%7D%5D&pageId=693930&insertionId=&insertionUUID=&insertionType=&referer=http%3A%2F%2Fportalrecarga.vivo.com.br%2F&accessPass=$pass2" http://e.vivo.ddivulga.com/api/v2.1/fetch -H "Origin: http://a.vivo.ddivulga.com" -w '%{response_code}' | grep -c 401)
+                          case $pass3 in
+                               1) echo -e "\e[01;33m queda na rede!\n VERIFIQUE SE ESTÁ TUDO CERTO\e[0m"; sleep 3; break;;
+                               *)
+                          esac
+                    echo $url
              while :; do # verificar ads on / token
-              token2=$(echo $url | jq -r '.["110"].appInstallRewardAdvUuid')
-                case $token2 in
-                       null) echo -e "\e[01;37m OK ADS ON / AGORA VEREMOS SE HÁ TOKEN ONLINE\e[0m";;
-                          *) ttt=1; toki=$(echo $url | jq -r '.["110"].appInstallRewardAdvUuid'); break
-                esac
-              token=$(echo $url | grep -c "campid:")
-                case $token in
+              #  token2=$(echo $url | jq -r '.["110"].appInstallRewardAdvUuid')
+                token2=$(echo $url | grep -c appInstallRewardAdvUuid)
+                    case $token2 in
+                         0) ttt=0; break;;
+                         *) echo -e "\e[01;37m OK ADS ON / AGORA VEREMOS SE HÁ TOKEN ONLINE\e[0m"
+                    esac
+                toki=$(echo $url | jq -r '.["110"].appInstallRewardAdvUuid')
+                    case $toki in
+                         null);;
+                            *) ttt=1; break
+                    esac
+                token=$(echo $url | grep -c "campid:")
+                    case $token in
                          1) ttt=1; toki=$(echo $url | grep -o "campid:......................................." | cut -d":" -f2 | cut -d'"' -f2); break;;
-                         0) echo -e "\e[01;37m NÃO ENCONTRAMOS TOKEN, PORÉM VOCÊ TERÁ SUCESSO NO PADRÃO\e[0m"; sleep .5; tx="CONTINUANDO PARA OS TOKENS PADRÃO"; tx2=; ttt=0; break
-                esac
+                         0) echo -e "\e[01;37m NÃO ENCONTRAMOS TOKEN, PORÉM VOCÊ TERA SUCESSO NO PADRÃO\e[0m"; sleep .5; tx="CONTINUANDO PARA OS TOKENS PADRÃO"; tx2=; ttt=0; break
+                    esac
              done
               numero=$(echo $url | jq -r '.msisdn')
                 case $ttt in
@@ -248,14 +272,14 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             #echo $response
 
                             case $body in
-                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
-                      packprovisionOK) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18
+                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
+                      packprovisionOK) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18
                             esac
                            done
                 esac
 
-             clear; echo -e $tit; echo
-                    echo -e "\e[01;37;41m           TESTADOR PADRÃO           \e[0m"; echo
+             clear; echo -e $tit
+                    echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
                     echo -e "\e[07;01;37;40m NUMERO \e[01;31;47m $numero \e[0m"; sleep .5; echo
                     qtdtokens=$(echo "$tokens"| wc -l)
                     for o in $(seq $qtdtokens);
@@ -272,23 +296,23 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                     pack=$'"packprovisionOK"'
                         case $o in
                         $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                 *) mssg=$(echo "tem mais")
+                                 *) mssg=$(echo "TEM MAIS")
                         esac
                      case $body in
-                          null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                         $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                             *) echo "ping +999"; echo $response; break
+                          null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                         $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                             *) echo "queda na rede"; echo $response; break
                      esac
                      done
                      done
-                       echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
-                       echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mINICIAR SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m cole o número\e[0m"
-                       echo -e "  \e[01;37m〘*2*〙\e[0m\e[01;04;33mDE NOVO COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Tudo automático\e[0m"
-                       echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                       echo -e "  \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
-                       echo -e "  \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
-                       echo -e "  \e[00;31m═══════════════════════════════\e[0m"
+                          echo -e "         \e[01;37m ＯＰＣＯＥＳ \e[0m"
+                          echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+                          echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mIR AO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m   cole só o número\e[0m"
+                          echo -e " \e[01;37m〘*2*〙\e[0m\e[01;04;33mDE NOVO COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m tudo automático\e[0m"
+                          echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+                          echo -e " \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
+                          echo -e " \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
+                          echo -e " \e[00;31m═══════════════════════════════\e[0m"
 
                
                   while :; do
@@ -296,12 +320,12 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                    read -n1 -p "$veri" opc2; echo
                   case $opc2 in
                        1)
-                       clear; echo -e $tit; echo
-                            echo -e "\e[01;37;41m           TESTADOR PADRÃO           \e[0m"; sleep .5; echo
+                       clear; echo -e $tit
+                            echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
                             echo -e "\e[01;37;41m Coloque 55+DDD+NÚMERO \e[0m"
                             read -p "$veri" NUMERO; sleep 1
-                       clear; echo -e $tit; echo
-                            echo -e "\e[01;37;41m           TESTADOR PADRÃO           \e[0m"; echo
+                       clear; echo -e $tit
+                            echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
                             echo -e "\e[07;01;37;40m NUMERO \e[01;31;47m $NUMERO \e[0m"; sleep .5; echo
                             veri=$(echo -e "\e[01;37m Numero: \e[0m")
                             for o in $(seq $qtdtokens);
@@ -318,44 +342,44 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             pack=$'"packprovisionOK"'
                               case $o in
                              $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                      *) mssg=$(echo "tem mais")
+                                      *) mssg=$(echo "TEM MAIS")
                               esac 
                               case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "ping +999"; echo $response; break
+                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                                      *) echo "queda na rede"; echo $response; break
                               esac
                             done
                             done
                             echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
-                       echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mDE NOVO SEM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m cole o número\e[0m"
-                       echo -e "  \e[01;37m〘*2*〙\e[0m\e[01;04;33mINICIAR COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m Tudo automático\e[0m"
-                       echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                       echo -e "  \e[01;37m『*3*』\e[0m\e[01;04;33m VOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
-                       echo -e "  \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
-                       echo -e "  \e[00;31m═══════════════════════════════\e[0m";;
+                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+                           echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mREPETIR TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m cole só o número\e[0m"
+                           echo -e " \e[01;37m〘*2*〙\e[0m\e[01;04;33mINICIAR COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m tudo automático\e[0m"
+                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
+                           echo -e " \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
+                           echo -e " \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
+                           echo -e " \e[00;31m═══════════════════════════════\e[0m";;
                        2) break;;
                        3) break;;
                        0) exit;;
                        *) echo -e "\e[01;37;41m CALMA BARBOLETA \e[0m"; sleep 1
                    esac
                    done
-                   case $opc2 in
-                      3) break
+                      case $opc2 in
+                           3) break
                       esac
                   done;;
                      
     3)
      while :; do
-        clear; echo -e $tit; echo
-               echo -e "\e[01;37;41m           TESTADOR PADRÃO           \e[0m"; echo
+        clear; echo -e $tit
+               echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
          qtdtokens=$(echo "$tokens"| wc -l)
                echo -e "\e[01;37;41m Coloque 55+DDD+NÚMERO \e[0m"
          veri=$(echo -e "\e[01;37m Numero: \e[0m")
           read -p "$veri" NUMERO; sleep 1
-         clear; echo -e $tit; echo
-                echo -e "\e[01;37;41m           TESTADOR PADRÃO           \e[0m"; echo
+         clear; echo -e $tit
+                echo -e "\e[01;37;41m           𝐓𝐄𝐒𝐓𝐀𝐃𝐎𝐑 𝐏𝐀𝐃𝐑𝐀𝐎           \e[0m"; sleep .4; echo
                 echo -e "\e[07;01;37;40m NUMERO \e[01;31;47m $NUMERO \e[0m"; sleep .5; echo
           for o in $(seq $qtdtokens);
              do
@@ -371,18 +395,18 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
          pack=$'"packprovisionOK"'
              case $o in
              $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                      *) mssg=$(echo "tem mais")
+                      *) mssg=$(echo "TEM MAIS")
              esac 
              case $body in
-                  null) echo -e "\e[01;33m MB INDISPONÍVEL NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                 $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                     *) echo "ping +999"; echo $response; break
+                  null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                 $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                     *) echo "queda na rede"; echo $response; break
              esac
             done
            done
                             echo -e "          \e[01;37m ＯＰＣＯＥＳ \e[0m"
                        echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mREPETIR TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m cole o número\e[0m"
+                       echo -e "  \e[01;37m〘*1*〙\e[0m\e[01;04;33mREPETIR TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m cole só o número\e[0m"
                        echo -e "  \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
                        echo -e "  \e[01;37m『*2*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
                        echo -e "  \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m     Noob sofre\e[0m"
@@ -401,9 +425,9 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                     done;;
                 
     4) 
-      clear; echo -e $tit; echo
-             echo -e "\e[01;37;41m            OBTER PASS pra usar na 2              \e[0m"; echo
-             echo -e "\e[01;02;37m # UTILIZE A REDE DO CHIP NESSA OPÇÃO! #\e[0m"|pv -qL 20; echo
+      clear; echo -e $tit
+             echo -e "\e[01;37;41m            SOLICITAR PASS             \e[0m"; echo
+             echo -e "\e[01;02;37m # USE A REDE DO CHIP NESSA OPÇÃO! #\e[0m"|pv -qL 25; echo
              echo -e "      \e[01;37m 𝚁𝙴𝚀𝚄𝙸𝚂𝙸𝚃𝙰𝙽𝙳𝙾 𝙾 𝙿𝙰𝚂𝚂\e[0m"
              echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m";sleep .5
                 
@@ -411,10 +435,10 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                 pass2=$(echo $pass| jq -r .sctoken)
                 pass3=$(echo $pass| grep -c sctoken)
                     case $pass3 in
-                         0) echo -e "\e[00;33m POH \n dica: NÃO UTILIZE WI-FI OU VPN DURANTE A VERIFICAÇÃO\e[0m"; sleep 4; break;;
+                         0) echo -e "\e[00;33m brasileiro é foda \n dica: NÃO UTILIZE WI-FI OU VPN DURANTE A VERIFICAÇÃO\e[0m"; sleep 2;;
                          1) echo -e "\e[01;37m CERTO PASS\e[0m\e[01;32m OK!\e[0m"|pv -qL 20; sleep .5
                                echo -e "\e[01;37m PASS > \e[0m\e[01;04;32m$pass2\e[0m"; sleep 1
-                         echo; echo -e "\e[01;02;37m # AGORA SÓ COPIAR E SALVAR EM ALGUM LUGAR LONGE DE MIM #\e[0m"; sleep .5; echo
+                         echo; echo -e "\e[01;02;37m # AGORA SÓ COPIAR E SALVAR EM ALGUM LUGAR #\e[0m"; sleep .5; echo
                     esac
              echo; echo -e "\e[01;33m PRESSIONE QUALQUER TECLA PARA VOLTAR\e[0m"
               read -n1;;
