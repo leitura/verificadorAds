@@ -60,7 +60,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                 pass2=$(echo $pass| jq -r .sctoken)
                 pass3=$(echo $pass| grep -c sctoken)
                     case $pass3 in
-                         0) echo -e "\e[00;33m brasileiro é foda \n dica: NÃO UTILIZE WI-FI OU VPN DURANTE A VERIFICAÇÃO\e[0m"; sleep 4; break;;
+                         0) echo -e "\e[00;33m brasileiro é foda \n dica: DURANTE VERIFICAÇÃO, USE SOMENTE REDE LIMPA DA VIVO\e[0m"; sleep 4; break;;
                          1) echo -e "\e[01;37m CERTO PASS\e[0m\e[01;32m OK!\e[0m"|pv -qL 20; sleep .5
                                echo -e "\e[01;37m PASS >\e[0m\e[00;32m $pass2\e[0m"; sleep 1
                     esac
@@ -435,7 +435,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                 pass2=$(echo $pass| jq -r .sctoken)
                 pass3=$(echo $pass| grep -c sctoken)
                     case $pass3 in
-                         0) echo -e "\e[00;33m brasileiro é foda \n dica: NÃO UTILIZE WI-FI OU VPN DURANTE A VERIFICAÇÃO\e[0m"; sleep 2;;
+                         0) echo -e "\e[00;33m brasileiro é foda \n dica: DURANTE VERIFICAÇÃO, USE SOMENTE REDE LIMPA DA VIVO\e[0m"; sleep 2;;
                          1) echo -e "\e[01;37m CERTO PASS\e[0m\e[01;32m OK!\e[0m"|pv -qL 20; sleep .5
                                echo -e "\e[01;37m PASS > \e[0m\e[01;04;32m$pass2\e[0m"; sleep 1
                          echo; echo -e "\e[01;02;37m # AGORA SÓ COPIAR E SALVAR EM ALGUM LUGAR #\e[0m"; sleep .5; echo
