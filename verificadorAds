@@ -76,7 +76,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                      
                      pass3=$(curl -s -d "slotId=%5B%7B%22slotId%22%3A110%2C%22target%22%3A%22%22%7D%5D&pageId=693930&insertionId=&insertionUUID=&insertionType=&referer=http%3A%2F%2Fportalrecarga.vivo.com.br%2F&accessPass=$pass2" http://e.vivo.ddivulga.com/api/v2.1/fetch -H "Origin: http://a.vivo.ddivulga.com" -w '%{response_code}' | grep -c 401)
                           case $pass3 in
-                               1) echo -e "\e[01;33m queda na rede!\n VERIFIQUE SE ESTÁ TUDO CERTO\e[0m"; sleep 3; break;;
+                               1) echo -e "\e[01;33m queda na rede!\n CALMA BARBOLETA\e[0m"; sleep 3; break;;
                                *)
                           esac
         
@@ -231,7 +231,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                     
                     pass3=$(curl -s -d "slotId=%5B%7B%22slotId%22%3A110%2C%22target%22%3A%22%22%7D%5D&pageId=693930&insertionId=&insertionUUID=&insertionType=&referer=http%3A%2F%2Fportalrecarga.vivo.com.br%2F&accessPass=$pass2" http://e.vivo.ddivulga.com/api/v2.1/fetch -H "Origin: http://a.vivo.ddivulga.com" -w '%{response_code}' | grep -c 401)
                           case $pass3 in
-                               1) echo -e "\e[01;33m queda na rede!\n VERIFIQUE SE ESTÁ TUDO CERTO\e[0m"; sleep 3; break;;
+                               1) echo -e "\e[01;33m queda na rede!\n CALMA BARBOLETA\e[0m"; sleep 3; break;;
                                *)
                           esac
                     echo $url
