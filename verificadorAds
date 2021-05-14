@@ -39,9 +39,9 @@ clear; echo -e $tit
   echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
   echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mVERIFICAR SE HÁ ADS\e[0m\c"; echo -e "\e[02;03;37m   Ver se posso ganhar MB\e[0m"
   echo -e " \e[01;37m〘*2*〙\e[0m\e[01;04;33mVERIFICAR ADS NA MÃO\e[0m\c"; echo -e "\e[02;03;37m  cole o PASS aqui\e[0m"
-  echo -e " \e[01;37m〘*3*〙\e[0m\e[01;04;33mIR AO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m Ir direto ao padrão\e[0m"
+  echo -e " \e[01;37m〘*3*〙\e[0m\e[01;04;33mIR NO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m Ir direto ao padrão\e[0m"
   echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-  echo -e " \e[01;37m『*4*』\e[0m\e[01;04;33mSOLICITAR PASS\e[0m\c"; echo -e "\e[02;03;37m         use chip Vivo nessa opção\e[0m"
+  echo -e " \e[01;37m『*4*』\e[0m\e[01;04;33mSOLICITAR PASS\e[0m\c"; echo -e "\e[02;03;37m  navegue com a rede Vivo nessa opção\e[0m"
   echo -e " \e[01;37m『*0*』\e[0m\e[01;04;33mCAIR FORA DO SCRIPT\e[0m\c"; echo -e "\e[02;03;37m   Noob sofre\e[0m"
   echo -e " \e[00;31m═══════════════════════════════\e[0m"
   
@@ -65,7 +65,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                                echo -e "\e[01;37m PASS >\e[0m\e[00;32m $pass2\e[0m"; sleep 1
                     esac
                     
-                    tx="NÃO HÁ ADS DISPONÍVEL PRA ESSE CHIP FULEIRO..."
+                    tx="SEM ADS DISPONÍVEL NO MOMENTO PARA ESTE NÚMERO"
                     tx2="CONTINUANDO PARA OS TOKENS PADRÃO\n VEREMOS SE HOJE É SEU DIA DE SORTE!"
                 echo; echo -e "     \e[01;37m 𝚅𝙴𝚁𝙸𝙵𝙸𝙲𝙰𝙽𝙳𝙾 𝚂𝙴 𝙷𝙰 𝙰𝙳𝚂 \e[0m"
                 echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m";sleep .5
@@ -115,8 +115,8 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             body=$(echo $response | jq -r '.packprovision')
 
                                 case $body in
-                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
-                      packprovisionOK) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18
+                                 null) echo -e "\e[01;33m TOKEN VICIADO\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
+                      packprovisionOK) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais $i\e[0m"|pv -qL 18
                                 esac
                                 done
                                 esac
@@ -142,15 +142,15 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                                        *) mssg=$(echo "TEM MAIS")
                               esac
                               case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                                   null) echo -e "\e[01;33m TOKEN VICIADO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais $i\e[0m"|pv -qL 18;;
                                       *) echo "queda na rede"; echo $response; break
                               esac
                              done
                             done
                           echo -e "         \e[01;37m ＯＰＣＯＥＳ \e[0m"
                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                          echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mIR AO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m   cole só o número\e[0m"
+                          echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mIR NO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m   cole só o número\e[0m"
                           echo -e " \e[01;37m〘*2*〙\e[0m\e[01;04;33mREPETIR COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m tudo automático\e[0m"
                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
                           echo -e " \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
@@ -187,8 +187,8 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                                            *) mssg=$(echo "TEM MAIS")
                                 esac 
                                 case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                                   null) echo -e "\e[01;33m TOKEN VICIADO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais $i\e[0m"|pv -qL 18;;
                                       *) echo "queda na rede"; echo $response; break
                                esac
                               done
@@ -221,7 +221,7 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                     read -n86 -p "Pass: " passs; sleep 1.5
              clear; echo -e $tit; echo -e "\e[01;37;41m   VERIFICANDO SE HÁ ADS DISPONÍVEL   \e[0m"; sleep .5; echo
           
-             tx="NÃO HÁ ADS DISPONÍVEL PRA ESSE CHIP FULEIRO..."
+             tx="SEM ADS DISPONÍVEL NO MOMENTO PARA ESTE NÚMERO"
              tx2="CONTINUANDO PARA OS TOKENS PADRÃO\n VEREMOS SE HOJE É SEU DIA DE SORTE!"
                 echo -e "     \e[01;37m 𝚅𝙴𝚁𝙸𝙵𝙸𝙲𝙰𝙽𝙳𝙾 𝚂𝙴 𝙷𝙰 𝙰𝙳𝚂 \e[0m"
                 echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m";sleep .5
@@ -272,8 +272,8 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             #echo $response
 
                             case $body in
-                                 null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
-                      packprovisionOK) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18
+                                 null) echo -e "\e[01;33m TOKEN VICIADO\e[0m"|pv -qL 20; sleep .3; echo -e "\e[01;02;37m CONTINUANDO PARA OS TOKENS PADRÃO!\e[0m"|pv -qL 18; sleep 3; break && break;;
+                      packprovisionOK) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais $i\e[0m"|pv -qL 18
                             esac
                            done
                 esac
@@ -299,15 +299,15 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                                  *) mssg=$(echo "TEM MAIS")
                         esac
                      case $body in
-                          null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                         $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                          null) echo -e "\e[01;33m TOKEN VICIADO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                         $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais $i\e[0m"|pv -qL 18;;
                              *) echo "queda na rede"; echo $response; break
                      esac
                      done
                      done
                           echo -e "         \e[01;37m ＯＰＣＯＥＳ \e[0m"
                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
-                          echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mIR AO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m   cole só o número\e[0m"
+                          echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mIR NO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m   cole só o número\e[0m"
                           echo -e " \e[01;37m〘*2*〙\e[0m\e[01;04;33mDE NOVO COM VERIFICAÇÃO\e[0m\c"; echo -e "\e[02;03;37m tudo automático\e[0m"
                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
                           echo -e " \e[01;37m『*3*』\e[0m\e[01;04;33mVOLTAR PARA O MENU\e[0m\c"; echo -e "\e[02;03;37m\e[0m"
@@ -345,8 +345,8 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                                       *) mssg=$(echo "TEM MAIS")
                               esac 
                               case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                                   null) echo -e "\e[01;33m TOKEN VICIADO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                                  $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais $i\e[0m"|pv -qL 18;;
                                       *) echo "queda na rede"; echo $response; break
                               esac
                             done
@@ -398,8 +398,8 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                       *) mssg=$(echo "TEM MAIS")
              esac 
              case $body in
-                  null) echo -e "\e[01;33m MB INDISPONÍVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                 $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais: $i\e[0m"|pv -qL 18;;
+                  null) echo -e "\e[01;33m TOKEN VICIADO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+                 $pack) echo -e "\e[01;32m SUCESSO, TOKEN BOM\e[0m / \e[01;37mmais $i\e[0m"|pv -qL 18;;
                      *) echo "queda na rede"; echo $response; break
              esac
             done
